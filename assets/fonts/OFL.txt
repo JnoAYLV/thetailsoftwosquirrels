@@ -1,11 +1,10 @@
-Fonts used on this site (embedded in the pages):
+Fonts used on this site (self-hosted with the site, in this folder):
 
 - IM Fell English: Copyright (c) 2010, Igino Marini (mail@iginomarini.com), with Reserved Font Name IM FELL.
 - Alegreya and Alegreya Sans SC: Copyright 2011 The Alegreya Project Authors (https://github.com/huertatipografica/Alegreya).
 
 These Font Software are licensed under the SIL Open Font License, Version 1.1.
 The full license text is available at https://openfontlicense.org
-
 
 -----
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
