@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="assets/css/site.css?v=0827ae49">
 </head>
 <body>
-<style>@media (max-width:759px){.pin-l{display:inline-block;font-size:.8rem}}.swipe-hint{z-index:2;background:rgba(20,25,28,.92);color:#f3eee0}.skip{min-height:44px}:root{--step--1:clamp(.9rem,.85rem + .15vw,.95rem)}@media (max-width:759px){.pin-l{font-size:.875rem}}.step-card{grid-template-columns:minmax(0,1fr)}.meter{flex-wrap:nowrap;gap:2px}.meter .m{flex:1 1 0;width:auto;min-width:0;max-width:12px;height:auto;aspect-ratio:12/15}@media (max-width:359px){.meter{flex-wrap:wrap;gap:3px}.meter .m{flex:0 0 calc((100% - 36px)/13);max-width:none}}.legend-art img,.place img,.step-card img{background:#2a3236}#place-dark img{filter:brightness(1.8) contrast(1.05)}.step-card img[src*="lantern-moths"]{filter:brightness(.88);opacity:1}.pin-n{font-size:.875rem}.pin-l{font-size:.875rem}@media (max-width:759px){.world-pan{width:215%}}</style>
+<style>@media (max-width:759px){.pin-l{display:inline-block;font-size:.8rem}}.swipe-hint{z-index:2;background:rgba(20,25,28,.92);color:#f3eee0}.skip{min-height:44px}:root{--step--1:clamp(.9rem,.85rem + .15vw,.95rem)}@media (max-width:759px){.pin-l{font-size:.875rem}}.step-card{grid-template-columns:minmax(0,1fr)}.meter{flex-wrap:nowrap;gap:2px}.meter .m{flex:1 1 0;width:auto;min-width:0;max-width:12px;height:auto;aspect-ratio:12/15}@media (max-width:359px){.meter{flex-wrap:wrap;gap:3px}.meter .m{flex:0 0 calc((100% - 36px)/13);max-width:none}}.legend-art img,.place img,.step-card img{background:#2a3236}#place-dark img{filter:brightness(1.8) contrast(1.05)}.step-card img[src*="lantern-moths"]{filter:brightness(.88);opacity:1}.pin-n{font-size:.875rem}.pin-l{font-size:.875rem}@media (max-width:759px){.world-pan{width:215%}}.quiz-card{background:var(--night);border-radius:var(--radius);box-shadow:inset 0 0 0 1px rgba(231,235,228,.1);padding:20px 18px 22px;max-width:40rem;display:grid;gap:.9rem}.quiz-count{font-family:var(--f-label);font-weight:700;letter-spacing:.08em;text-transform:lowercase;color:var(--gold);font-size:.95rem;margin:0}.quiz-q{font-family:var(--f-display);color:var(--mist);font-size:var(--step-1);line-height:1.25;margin:0}.quiz-opts{list-style:none;margin:0;padding:0;display:grid;gap:10px}.quiz-opts button,.quiz-again{font:inherit;font-size:1.05rem;text-align:left;width:100%;min-height:48px;padding:11px 16px;border-radius:10px;border:1.5px solid rgba(217,178,74,.45);background:#262f33;color:var(--mist);cursor:pointer;line-height:1.35}.quiz-opts button:hover,.quiz-opts button:focus-visible{border-color:var(--gold);outline:none;box-shadow:0 0 0 2px var(--gold)}.quiz-result{display:grid;gap:.75rem}.quiz-result img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:var(--radius);background:#2a3236}.quiz-result h3{font-family:var(--f-display);color:var(--gold);font-size:var(--step-1);margin:0;line-height:1.2}.quiz-result p{margin:0}.quiz-actions{display:flex;flex-wrap:wrap;gap:10px}.quiz-again{width:auto;text-align:center;font-family:var(--f-label);font-weight:700;letter-spacing:.06em;text-transform:lowercase;border-radius:999px}.quiz-q:focus{outline:none}.quiz-opts button:active{background:#33403f;border-color:var(--gold)}.quiz-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;margin:0}.quiz-note{font-size:.95rem;margin:0;color:var(--ash)}@media (max-width:759px){.pin:nth-child(3){transform:translate(calc(-100% + 22px),-50%)}.pin:nth-child(3) a{flex-direction:row-reverse}}@media (max-width:359px){.mark{width:44px}.hero-copy{gap:.55rem}.world-pan{width:150%}.hero-copy .eyebrow{margin-bottom:0}}</style>
 <a class="skip" href="#legend">Skip to the story</a>
 
 <header class="hero" aria-labelledby="site-title">
@@ -166,7 +166,7 @@
         <img src="assets/img/grey-edge-720.webp" width="720" height="403" loading="lazy" alt="Two kingdom sentries in blue on a wooden wall at sunset, one pointing out at the forest beyond.">
         <div class="place-text">
           <h3>The grey edge</h3>
-          <p>Where the colours stop. For generations the line between green and grey stayed put. Lately the sentries on the east wall keep finding one more grey tree than the day before.</p>
+          <p>Where the green ends. For generations the line between green and grey stayed put. Lately the sentries on the east wall keep finding one more grey tree than the day before.</p>
         </div>
       </article>
       <article class="place place-dark" id="place-dark">
@@ -176,6 +176,20 @@
           <p>A hundred shades of grey, and rot-glow on the trunks like chalk. Warm fog rises from the Wound, a great bowl nobody has seen the bottom of, and the dead leaves fall upward. Under one hole in the canopy lies a fallen statue no one remembers carving.</p>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<section id="find-your-place" class="band band-split quiz" aria-labelledby="quiz-h">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">A game for readers</p>
+      <h2 id="quiz-h">Where on the Arden Oak would you belong?</h2>
+      <p class="lede">Four quick questions. Nothing you pick is saved or sent anywhere. It all stays on this page.</p>
+    </div>
+    <p class="quiz-sr" id="quiz-status" aria-live="polite"></p>
+    <div class="quiz-card" id="quiz">
+      <noscript><p class="quiz-note">This little game needs JavaScript switched on. Everything else on the page works without it.</p></noscript>
     </div>
   </div>
 </section>
@@ -335,12 +349,65 @@
   var w=document.getElementById('world'); if(!w) return;
   if (w.scrollWidth <= w.clientWidth + 4) return;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  w.scrollLeft = (w.scrollWidth - w.clientWidth) * 0.08;
+  w.scrollLeft = (w.scrollWidth - w.clientWidth) * 0.26;
   if (reduce) return;
   var start=null, from=w.scrollLeft, to=(w.scrollWidth - w.clientWidth)*0.55, touched=false;
   ['touchstart','wheel','pointerdown'].forEach(function(e){ w.addEventListener(e,function(){touched=true;},{passive:true}); });
   function step(t){ if(touched) return; if(!start) start=t; var p=Math.min((t-start)/9000,1); var e=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2; w.scrollLeft=from+(to-from)*e; if(p<1) requestAnimationFrame(step); }
   setTimeout(function(){ requestAnimationFrame(step); }, 1200);
+})();
+</script>
+<script>
+(function(){
+  var box=document.getElementById('quiz'); if(!box) return;
+  var Q=[
+    ["It's market day on the Arden Oak. Where do you go first?",
+     ["Straight to the stalls, to see what's new and strike a deal","Up to a quiet branch, to watch everyone go by","To the lantern-makers, to see how the light gets in","To the east wall, to look out over the grey"]],
+    ["Pick one thing to carry.",
+     ["A satchel full of trade tokens","A small lantern and a book of old stories","A glass jar for catching light","A pinecone. Just in case."]],
+    ["A friend is in trouble. What do you do?",
+     ["Make a plan. Then make a better one.","Listen first, then tell them about someone who got through worse","Bring a light, so they don't have to face it in the dark","Stand between them and the trouble"]],
+    ["Pick a time of day.",
+     ["Noon, when the market is loudest","Midnight, when the stories come out","Dawn, when the frost glitters","Sunset, when you can see the furthest"]]
+  ];
+  var R=[
+    {h:"The Market Ring",img:"assets/img/market-ring-720.webp",alt:"A busy market high in a giant oak, with stalls under leaf awnings.",p:"You belong high in the Arden Oak, where moles deliver the post through hatches in the floor and every map is out of date by lunchtime. You'd know everyone, and half of them would owe you a favour."},
+    {h:"Someone the Longwatch would trust",img:"assets/img/world-1200.webp",pos:"27% 50%",alt:"The great oak at dusk, glowing with lanterns.",p:"Patient, quiet and very hard to fool. You notice the thing everyone else walks past, and you remember the stories nobody else bothers to tell. Old Oswin would like you."},
+    {h:"An apprentice Sapwarden",img:"assets/img/lantern-moths-app-720.webp",alt:"Lantern-moths with glowing golden-green wings.",p:"You'd learn to borrow a thread of light from living bark, the old careful way. Careful, curious, and brave enough to pay what it costs. The light is only borrowed, and you'd never forget it."},
+    {h:"A sentry on the east wall",img:"assets/img/grey-edge-720.webp",alt:"Two kingdom sentries in blue on a wooden wall at sunset, one pointing out at the forest.",p:"You'd stand watch where the green ends. You'd be the first to spot one more grey tree than yesterday, and the last to look away."}
+  ];
+  var i=0, score=[0,0,0,0], last=0, st=document.getElementById('quiz-status');
+  function say(t){ if(st){ st.textContent=''; setTimeout(function(){ st.textContent=t; },60); } }
+  function shuffle(a){ for(var n=a.length-1;n>0;n--){ var m=Math.floor(Math.random()*(n+1)); var t=a[n]; a[n]=a[m]; a[m]=t; } return a; }
+  function el(t,c,txt){var e=document.createElement(t); if(c) e.className=c; if(txt!=null) e.textContent=txt; return e;}
+  function ask(){
+    box.innerHTML='';
+    box.appendChild(el('p','quiz-count','Question '+(i+1)+' of '+Q.length));
+    var q=el('p','quiz-q',Q[i][0]); q.id='quiz-q'; q.tabIndex=-1; box.appendChild(q);
+    var ul=el('ul','quiz-opts'); ul.setAttribute('role','list'); ul.setAttribute('aria-labelledby','quiz-q');
+    shuffle([0,1,2,3]).forEach(function(k){ var txt=Q[i][1][k]; var li=el('li'); var b=el('button',null,txt); b.type='button';
+      b.addEventListener('click',function(){ score[k]++; last=k; i++; if(i<Q.length){ask(); focusQ(); say('Question '+(i+1)+' of '+Q.length);} else {show();} });
+      li.appendChild(b); ul.appendChild(li); });
+    box.appendChild(ul);
+  }
+  function focusQ(){ var q=document.getElementById('quiz-q'); if(q) q.focus({preventScroll:true}); }
+  function show(){
+    var best=0; for(var k=1;k<4;k++){ if(score[k]>score[best]) best=k; }
+    if(score.filter(function(s){return s===score[best];}).length>1 && score[last]===score[best]) best=last;
+    var r=R[best]; box.innerHTML='';
+    var d=el('div','quiz-result');
+    d.appendChild(el('p','quiz-count','You belong with'));
+    var h=el('h3',null,r.h); h.tabIndex=-1; d.appendChild(h);
+    var im=el('img'); im.src=r.img; im.alt=r.alt; im.width=720; im.height=405; if(r.pos) im.style.objectPosition=r.pos; d.appendChild(im);
+    d.appendChild(el('p',null,r.p));
+    var a=el('div','quiz-actions');
+    var again=el('button','quiz-again','Play again'); again.type='button';
+    again.addEventListener('click',function(){ i=0; score=[0,0,0,0]; last=0; ask(); focusQ(); say('Question 1 of '+Q.length); });
+    var read=el('a','btn btn-gold','Read the first page'); read.href='#first-page';
+    a.appendChild(again); a.appendChild(read); d.appendChild(a);
+    box.appendChild(d); h.focus({preventScroll:true}); say('You belong with: '+r.h);
+  }
+  ask();
 })();
 </script>
 
